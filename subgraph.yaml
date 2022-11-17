@@ -8,10 +8,11 @@ dataSources:
     source:
       address: "0x4BC59CcBEe5feA061F27a4f87a0D5FD3AD92778B"
       abi: NftMarketplace
+      startBlock: 7966726 #start indexing from right before the block in which contract is deployed. If we dont dont mention this graph indexes from start
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
-      language: wasm/assemblyscript
+      language: wasm/assemblyscript 
       entities:
         - ItemBought
         - ItemCanceled
